@@ -27,8 +27,6 @@ local kind_icons = {
   Event = "⚡",
   Operator = "±",
 }
----- find more here: https://www.nerdfonts.com/cheat-sheet
-
 cmp.setup {
   snippet = {
     expand = function(args)
@@ -106,6 +104,8 @@ cmp.setup {
     select = false,
   },
   window = {
-    documentation = 'native',
+    documentation = {
+      border = {'╭', '─', '╮', '│', '╯', '─', '╰', '│'},
+    },
   },
 }
